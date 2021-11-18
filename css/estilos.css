@@ -2,33 +2,37 @@
   margin: 0;
 }
 
-.navbar {
+.navbar-container {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.navbar-content {
   background: white;
   height: 55px;
-  width: 1350px;
-  margin-bottom: 5px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-img{
-  float: left;
-  width: 50px;
+.logo-container {}
+
+.logo-img {
+  width: auto;
   height: 50px;
-  margin-left: 5px;
-  margin-right: 4px;
-  margin-top: 1px;
 }
 
-#tittle {
+.logo-tittle {
   color: rgb(12, 92, 211);
-  align-items: center;
   font-size: 41px;
-  margin-top: 0;
-  padding: 4px;
 }
 
-.logo {
-  width: 250px;
+.nav-links {
+  display: flex;
+  margin-left: 100px;
 }
 
 .rigth-btn {
