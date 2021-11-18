@@ -59,6 +59,7 @@ img{
   display: flex;
   margin-top: 20px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 h2 {
@@ -67,6 +68,7 @@ h2 {
   font-family:tahoma;
   margin-left: 30px;
   margin-top: 60px;
+  height: 70px;
 }
 
 h3 {
@@ -75,4 +77,6 @@ h3 {
   font-size: 15px;
   height: 30px;
   display: flex;
+  width: 400px;
+  margin-left: 30px;
 }
