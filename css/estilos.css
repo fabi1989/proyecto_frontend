@@ -4,11 +4,10 @@
 
 .navbar-container {
   padding: 0 20px;
-  margin-bottom: 5px;
+  background: white;
 }
 
 .navbar-content {
-  background: white;
   height: 55px;
   width: 100%;
   max-width: 1350px;
