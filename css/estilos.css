@@ -37,7 +37,7 @@ img{
 }
 
 .nav-enlace {
-  background: rgb(255, 255, 255);
+  background: none;
   color: black;
   padding: 5px 30px;
   display: inline-block;
@@ -83,4 +83,18 @@ h3 {
 
 .ver-canciones {
   margin-left: 25px;
+  width: 150px;
+}
+
+.slider {
+  background-color: rosybrown;
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-right: 30px
+}
+
+img {
+  width: 250px;
+  height: 150px;
 }
