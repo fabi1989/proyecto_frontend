@@ -61,15 +61,18 @@
   border-radius: 5px;
   width: 100%;
   max-height: 350px;
+  padding: 40px 20px;
   display: flex;
+}
+
+.block-info {
+  width: 50%;
 }
 
 h2 {
   font-size: 23px;
   font-weight:bold;
   font-family:tahoma;
-  margin-left: 25px;
-  margin-top: 60px;
   height: 70px;
 }
 
@@ -80,7 +83,6 @@ h3 {
   height: 30px;
   display: flex;
   width: 400px;
-  margin-left: 25px;
 }
 
 .ver-canciones {
