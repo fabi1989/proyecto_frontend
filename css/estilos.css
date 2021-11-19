@@ -25,6 +25,7 @@
 .logo-title {
   color: rgb(12, 92, 211);
   font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -101,4 +102,14 @@ img {
   width: 450px;
   height: 265px;
   border-radius: 5px;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.title-playlist {
+  font-family: tahoma;
+  font-size: 30px;
+  font-weight: bold;
 }
