@@ -61,6 +61,7 @@
   max-height: 350px;
   padding: 40px 20px;
   display: flex;
+  height: 400px;
 }
 
 .block-info {
