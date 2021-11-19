@@ -23,7 +23,7 @@
 }
 
 .logo-title {
-  color: rgb(12, 92, 211);
+  color: blue;
   font-size: 20px;
   font-weight: bold;
 }
@@ -63,6 +63,7 @@
   padding: 40px 20px;
   display: flex;
   height: 400px;
+  margin-bottom: 35px;
 }
 
 .block-info {
@@ -109,7 +110,18 @@ img {
 }
 
 .title-playlist {
-  font-family: tahoma;
+  font-family: Helvetica;
   font-size: 30px;
   font-weight: bold;
+  border-bottom: 1px solid rgb(206, 205, 205);
+  border-top: 1px solid rgb(206, 205, 205);
 }
+
+.list-nombre {
+  width: 350px;
+}
+
+.num-list {
+  color: blue;
+}
+
