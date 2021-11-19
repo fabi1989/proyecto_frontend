@@ -39,6 +39,7 @@
   text-decoration: none;
 }
 
+
 .main-container {
   background: rgb(245, 242, 242);
   height: 750px;
@@ -118,10 +119,11 @@ img {
 }
 
 .list-nombre {
-  width: 350px;
+  width: 250px;
 }
 
 .num-list {
   color: blue;
 }
+
 
