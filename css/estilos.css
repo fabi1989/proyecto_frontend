@@ -130,6 +130,9 @@ img {
   background: rgb(55, 55, 247);
   height: 30px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
 }
 
 
