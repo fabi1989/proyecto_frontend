@@ -8,16 +8,13 @@
   margin-bottom: 0px;
 }
 
-.table, td {
-  border: 1px solid black;
-  width: auto;
-}
+
 
 .table-container {
   padding: 20px; 
 }
 
-.img-playlist {
+.img-playlis {
 width: 100px;
 height: 140px;
 }
