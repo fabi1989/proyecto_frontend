@@ -46,56 +46,48 @@
 
   <div class="main-container">
     <h1 id="tit-registro">Registro</h1>
+
     <form>
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Correo electrónico</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Ingrese correo">
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese correo" />
+        <label for="contraseña">Contraseña</label>
+        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese contraseña">
+        <label for="contraseña(confirmacion)">Confirmación de contraseña</label>
+        <input type="password" class="form-control" id="confirmacion" placeholder="Confirmación de contraseña">
+      </div>
+
+      <div class="genero-container">
+        <label>Género música favorita</label>
+        <div class="generomusica" name="generomusica" id="generomusica">
+          <select>
+            <option value="">Seleccione</option>
+            <option value="1">Rock</option>
+            <option value="2">Balada</option>
+            <option value="3">Salsa</option>
+            <option value="4">Otro</option>
+          </select>
         </div>
+      </div>
+      <div class="radial-option">
+        <p>
+          Edad<br>
+          <label><input type="radio" name="edad" value="menora20"> Menor a 20</label><br>
 
-        <div class="form-group">
-          <label for="exampleInputPassword1">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña">
-        </div>
+          <label><input type="radio" name="edad" value="20a40"> 20 a 40</label><br>
 
-        <div class="form-group">
-          <label for="exampleInputPassword1">Confirmación de contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1"
-            placeholder="Confirmación de contraseña">
-        </div>
+          <label><input type="radio" name="edad" value="mayor a 50"> Mayor a 50</label>
+        </p>
+      </div>
 
-        <div class="genero-container">
-          <label>Género música favorita</label>
-          <div class="generomusica" name="generomusica" id="generomusica">
-            <select>
-              <option value="">Seleccione</option>
-              <option value="1">Rock</option>
-              <option value="2">Balada</option>
-              <option value="3">Salsa</option>
-              <option value="4">Otro</option>
-            </select>
-          </div>
-        </div>
-        <div class="radial-option">
-          <p>
-            Edad<br>
-            <label><input type="radio" name="edad" value="menora20"> Menor a 20</label><br>
-
-            <label><input type="radio" name="edad" value="20a40"> 20 a 40</label><br>
-
-            <label><input type="radio" name="edad" value="mayor a 50"> Mayor a 50</label>
-          </p>
-        </div>
-
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Acepto los terminos de uso</label>
-        </div>
-        <button id="bot-guardarregistro" type="submit" class="btn btn-primary">Continuar</button>
-      </form>
-
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Acepto los terminos de uso</label>
+      </div>
+      <button id="boton-continuar" value="continuar" type="submit" onclick="return validar(this.form)"
+        class="btn btn-primary mb-2">Continuar</button>
     </form>
+
 
   </div>
 
@@ -119,6 +111,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+  <script src="/js/registro.js"></script>
 </body>
 
 </html>
