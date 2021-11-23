@@ -1,10 +1,23 @@
+#tit-registro {
+  margin-left: 415px;
+  
+}
+
 .form-check {
   display: flex;
   text-align: inherit;
   justify-content: center;
   margin-right: 272px;
+  padding: 20px;
 }
 
 #bot-guardarregistro {
   margin-left: 415px;
+}
+
+.genero-container {
+  width: 813px;
+  padding: 10px;
+  padding-left: 413px;
+
 }
