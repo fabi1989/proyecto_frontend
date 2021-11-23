@@ -10,7 +10,7 @@
   text-align: inherit;
   justify-content: center;
   margin-right: 272px;
-  padding: 20px;
+  padding: 10px;
 }
 
 #bot-guardarregistro {
@@ -21,5 +21,12 @@
   width: 813px;
   padding: 10px;
   padding-left: 413px;
+}
+
+.radial-option {
+  height: 110px;
+  width: 350px;
+  margin-left: 414px;
+  padding: 5px;
 
 }
