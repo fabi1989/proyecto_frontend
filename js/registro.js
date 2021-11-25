@@ -14,6 +14,21 @@ function validar(registro) {
     return false;
   }
 
+  if (registro.generomusica.value == "") {
+    alert("Elija género es obligatorio");
+    return false;
+  }
+
+  if (registro.edad.value == "") {
+    alert("Elija opcion es obligtorio")
+    return false
+  }
+
+  if (!registro.terminos.checked) {
+    alert("Debe aceptar los terminos")
+    return false
+  }
+
   return true;
 
 }
