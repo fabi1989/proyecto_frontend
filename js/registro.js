@@ -14,7 +14,7 @@ function validar(registro) {
     return false;
   }
 
-  if (registro.generomusica.value == "") {
+  if (registro.checked) {
     alert("Elija género es obligatorio");
     return false;
   }
