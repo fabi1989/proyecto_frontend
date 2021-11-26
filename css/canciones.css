@@ -19,3 +19,8 @@
 width: 58px;
 height: 88px;
 }
+
+.input-box:focus {
+  border-color: grey;
+  outline: none;
+}
