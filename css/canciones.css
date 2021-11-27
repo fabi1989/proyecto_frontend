@@ -8,11 +8,22 @@
   margin-bottom: 0px;
 }
 
-.table-container {
+.canciones {
   padding: 20px; 
-  text-align: center;
-  display: table-caption;
-  margin-left: 145px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cancion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 10px);
+}
+
+.cancion > h4 {
+  text-transform: capitalize;
 }
 
 .img-playlis {

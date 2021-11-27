@@ -44,65 +44,34 @@
     </header>
   </div>
 
-  <div class="main-container">
-    <form class="main-content">
-      <h1 class="title-canciones">Canciones</h1>
-      <input class="input-box" type="search" size="140px" list="busqueda" placeholder="buscar...">
-    </form>
-    <datalist id="busqueda">
-      <option value="vive">
-      <option value="invierno">
-      <option value="planeta">
-      <option value="suave">
-      <option value="contigo">
-      <option value="alas">
-      <option value="verde">
-      <option value="nuevamente">
-      <option value="hoy">
-    </datalist>
-
-    <div class="table-container">
-      <table class="table">
-        <tr>
-          <td><img class="img-playlis" src="/imagenes/icon_4.svg">
-            <h4>Vive</h4><audio src="/canciones/uno.mp3" controls></audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_1.svg">
-            <h4>Invierno</h4><audio src="/canciones/dos.mp3" controls></audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_3.svg">
-            <h4>Planeta</h4><audio src="/canciones/tres.mp3" controls></audio>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="img-playlis" src="/imagenes/icon_2.svg">
-            <h4>Suave</h4><audio src="/canciones/cuatro.mp3" controls></audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_4.svg">
-            <h4>Contigo</h4><audio src="/canciones/cinco.mp3" controls></audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_1.svg">
-            <h4>Alas</h4><audio src="/canciones/seis.mp3" controls></audio>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="img-playlis" src="/imagenes/icon_3.svg">
-            <h4>Verde</h4><audio src="/canciones/siete.mp3" controls></audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_1.svg">
-            <h4>Nuevamente</h4><audio src="/canciones/ocho.mp3" controls>
-            </audio>
-          </td>
-          <td><img class="img-playlis" src="/imagenes/icon_2.svg">
-            <h4>Nueve</h4><audio src="/canciones/nueve.mp3" controls></audio>
-          </td>
-        </tr>
-      </table>
+  <div style="display: none;">
+    <div id="cancion-template" class="cancion" data-id="">
+      <img class="img-playlis">
+      <h4></h4>
+      <audio controls></audio>
     </div>
-
   </div>
 
+  <div class="main-container">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/canciones.js"></script>
 
+    <form class="main-content">
+      <h1 class="title-canciones">Canciones</h1>
+      <input class="input-box" id="texto" type="search" size="140px" list="busqueda" placeholder="buscar...">
+    </form>
+
+
+    <div id="canciones-container" class="canciones">
+      <!--
+      <div class="cancion" data-id="Vive">
+        <img class="img-playlis" src="/imagenes/icon_4.svg">
+        <h4>Vive</h4>
+        <audio src="/canciones/uno.mp3" controls></audio>
+      </div>
+      -->
+    </div>
+  </div>
 
   <div class="footer">
     <div>Comparte tu música</div>
