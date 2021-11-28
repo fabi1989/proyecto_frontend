@@ -4,8 +4,8 @@ function validar(registro) {
     return false;
   }
 
-  if (registro.contraseña.value.trim().length == 0) {
-    alert("contraseña obligatoria");
+  if (registro.contraseña.value.trim().length <= 7) {
+    alert("contraseña obligatoria, mínimo 8 dígitos");
     return false;
   }
 
@@ -14,8 +14,8 @@ function validar(registro) {
     return false;
   }
 
-  if (registro.checked) {
-    alert("Elija género es obligatorio");
+  if (registro.generomusica) {
+    alert("Elija género de música es obligatorio");
     return false;
   }
 
