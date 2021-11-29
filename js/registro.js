@@ -1,11 +1,11 @@
 function validar(registro) {
   if (registro.email.value.trim().length == 0) {
-    alert("correo obligatorio");
+    alert("Correo obligatorio");
     return false;
   }
 
   if (registro.contraseña.value.trim().length <= 7) {
-    alert("contraseña obligatoria, mínimo 8 dígitos");
+    alert("Contraseña debe contener mínimo 8 dígitos");
     return false;
   }
 
@@ -14,19 +14,19 @@ function validar(registro) {
     return false;
   }
 
-  if (registro.generomusica) {
-    alert("Elija género de música es obligatorio");
+  if (registro.generomusica.value == "") {
+    alert("Selecciona un género");
     return false;
   }
 
   if (registro.edad.value == "") {
-    alert("Elija opcion es obligtorio")
-    return false
+    alert("Rango edad es obligtorio")
+    return false;
   }
 
   if (!registro.terminos.checked) {
     alert("Debe aceptar los terminos")
-    return false
+    return false;
   }
 
   return true;
