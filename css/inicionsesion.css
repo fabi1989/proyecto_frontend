@@ -13,3 +13,17 @@ margin-left: 400px;
   margin-right: 202px;
   padding-top: 30px;
 }
+
+.my-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-error {
+  color: red;
+  display: none;
+}
+
+.input-error--is-active {
+  display: block;
+}

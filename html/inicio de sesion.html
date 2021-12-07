@@ -49,12 +49,20 @@
 
     <form>
       <div class="form-group">
-        <label form="email">Correo electrónico</label>
-        <input type="email" name="email" class="form-control" id="email" placeholder="ejemplo@correo.com" />
-        <label for="contraseña">Contraseña</label>
-        <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+        <div class="my-input-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" />
+          <p class="input-error input-error--is-active">Error ud vale pipi</p>
+        </div>
+
+        <div class="my-input-group">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
+          <p class="input-error">Error ud vale pipi</p>
+        </div>
       </div>
-      <button id="boton-continuar" value="continuar" type="submit" onclick="return validar(this.form)"
+
+      <button id="boton-continuar" value="continuar" type="button" onclick="return validar(this.form)"
         class="btn btn-primary mb-2">Continuar</button>
     </form>
 

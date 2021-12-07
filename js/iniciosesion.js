@@ -1,13 +1,23 @@
-function validar(iniciosesion) {
-  if (/^\w+[a-z]i([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)) {
-    alert("la dirección de email" + valor + "es correcta.");
+function validar(cualquiercosa) {
+  // 'input-group'
+  console.log({ cualquiercosa })
+
+  const passwd = cualquiercosa.contrasena.value.trim();
+  const emailStr = cualquiercosa.email.value.trim();
+  const regex = /^\w+[a-z]i([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
+
+  const passwdError = cualquiercosa.contrasena
+    .parentNode.querySelector('.input-error')
+
+  if (passwd.length == 0) {
+    passwdError.classList.add('input-error--is-active');
   } else {
-    alert("la dirección de email es incorrecta");
+    passwdError.classList.remove('input-error--is-active');
   }
 
-  if (iniciosesion.contraseña.value.trim().length == 0) {
-    alert("Contraseña obligatoria");
-    return false;
+  if (regex.test(emailStr)) {
+    console.log('FUNCIONA');
+  } else {
+    console.log('NO FUNCIONA');
   }
-
 }
